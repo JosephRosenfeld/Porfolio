@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Full Stack Software Mobile and Web Developer</title>
     <meta content="Software Engineer and Web Developer" name="description">
@@ -18,7 +19,19 @@
         <li><a href="https://drive.google.com/file/d/1NeWavFEb9Lgln9-BbDkkD5jj32hle90E/view?usp=sharing" target="_blank"><img class="key-icon" src="assets/icons/icons8-document-90.png"></a></li>
         <li><a href="https://github.com/JosephRosenfeld" target="_blank"><img class="key-icon" src="assets/icons/icons8-github-90.png"></a></li>
       </ul>
-      <nav>
+      <div class="nav-toggle">
+        <i class="material-icons">menu</i>
+      </div>
+      <nav class="nav-mobile">
+        <ul id="navbar" class="nav">
+          <li><a class="navlink scrollto" href="#home">HOME</a></li>
+          <li><a class="navlink scrollto" href="#aboutMe">ABOUT</a></li>
+          <li><a class="navlink scrollto" href="#skills">SKILLS</a></li>
+          <li><a class="navlink scrollto" href="#projects">PROJECTS</a></li>
+          <li><a class="navlink scrollto" href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-desktop">
         <ul id="navbar" class="nav">
           <li><a class="navlink scrollto" href="#home">HOME</a></li>
           <li><a class="navlink scrollto" href="#aboutMe">ABOUT</a></li>
@@ -125,7 +138,7 @@
         <div class="project prj1">
           <img class="prj-img" src="assets/images/Tetris-Preview.png" alt="Tetris preview">
           <h3 class="prj-title">Tetris</h3>
-          <h4 class="prj-subtitle">Sub-title</h4>
+          <h4 class="prj-subtitle">Tetris video game clone</h4>
           <div class="buttons-display">
             <button class="btn-live" onclick="window.open('https://josephrosenfeld.github.io/Tetris/')" type="button">
               <img class="eye-icon" src="assets/icons/icons8-eye-48.png">
@@ -137,7 +150,7 @@
         <div class="project prj2">
           <img class="prj-img" src="assets/images/nostalgia-tripper-preview-darker.jpg" alt="Nostalgia Tripper preview">
           <h3 class="prj-title">Nostalgia Tripper</h3>
-          <h4 class="prj-subtitle">Sub-title</h4>
+          <h4 class="prj-subtitle">Newsletter subscription service</h4>
           <div class="buttons-display">
             <button class="btn-live" onclick="window.open('https://josephrosenfeld.github.io/Nostalgia-Tripper/')" type="button">
               <img class="eye-icon" src="assets/icons/icons8-eye-48.png">
@@ -149,7 +162,7 @@
         <div class="project prj3">
           <img class="prj-img" src="assets/images/got-weather-preview.png" alt="Got Weather preview">
           <h3 class="prj-title">Got Weather?</h3>
-          <h4 class="prj-subtitle">A free online weather forecaster</h4>
+          <h4 class="prj-subtitle">Online weather app</h4>
           <div class="buttons-display">
             <button class="btn-live" onclick="window.open('https://josephrosenfeld.github.io/Weather-API/')" type="button">
               <img class="eye-icon" src="assets/icons/icons8-eye-48.png">

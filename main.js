@@ -152,25 +152,6 @@ if (backtotop) {
 }
 
 /**
- * Mobile nav toggle
- */
-on('click', '.mobile-nav-toggle', function(e) {
-  select('#navbar').classList.toggle('navbar-mobile')
-  this.classList.toggle('bi-list')
-  this.classList.toggle('bi-x')
-})
-
-/**
- * Mobile nav dropdowns activate
- */
-on('click', '.navbar .dropdown > a', function(e) {
-  if (select('#navbar').classList.contains('navbar-mobile')) {
-    e.preventDefault()
-    this.nextElementSibling.classList.toggle('dropdown-active')
-  }
-}, true)
-
-/**
  * Scrool with ofset on links with a class name .scrollto
  */
 on('click', '.scrollto', function(e) {
@@ -198,6 +179,22 @@ window.addEventListener('load', () => {
     }
   }
 });
+
+on('click', '.nav-mobile .navlink', function(e) {
+  console.log("yee");
+  let navMobile = select(".nav-mobile");
+  navMobile.style.display = "none";
+}, true)
+
+on('click', '.nav-toggle', function(e) {
+  console.log("yeet");
+  let navMobile = select(".nav-mobile");
+  if (navMobile.style.display == "block") {
+    navMobile.style.display = "none";
+  } else {
+    navMobile.style.display = "block";
+  }
+}, true)
 
 
 
