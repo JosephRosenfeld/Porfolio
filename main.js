@@ -124,14 +124,12 @@ on('click', '.scrollto', function(e) {
       navbarToggle.classList.toggle('bi-list');
       navbarToggle.classList.toggle('bi-x');
     }
-    console.log(this.hash);
     scrollto(this.hash);
   }
 }, true)
 
 //activating back-to-top button
 on('click', '.back-to-top', function(e) {
-  console.log(this);
   scrollto('#home');
 }, true);
 
@@ -181,13 +179,11 @@ window.addEventListener('load', () => {
 });
 
 on('click', '.nav-mobile .navlink', function(e) {
-  console.log("yee");
   let navMobile = select(".nav-mobile");
   navMobile.style.display = "none";
 }, true)
 
 on('click', '.nav-toggle', function(e) {
-  console.log("yeet");
   let navMobile = select(".nav-mobile");
   if (navMobile.style.display == "block") {
     navMobile.style.display = "none";
